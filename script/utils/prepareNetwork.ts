@@ -18,7 +18,8 @@ export enum NETWORK {
   WORLDCHAIN = 'worldchain-mainnet',
   ZKSYNC_ERA = 'zksync-era',
   ZORA = 'zora-mainnet',
-  DOMA = 'doma-testnet',
+  DOMATESTNET = 'doma-testnet',
+  DOMA = 'doma-mainnet',
 }
 
 export enum SUBGRAPH_TYPE {
