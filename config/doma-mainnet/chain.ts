@@ -19,11 +19,11 @@ export const ROLL_DELETE_MINUTE_LIMITER = BigInt.fromI32(1000)
 // usually tokens that many tokens are paired with s
 export const WHITELIST_TOKENS: string[] = [
   '0x4200000000000000000000000000000000000006', // WETH
-  '0x31EEf89D5215C305304a2fA5376a1f1b6C5dc477', // USDC.e
+  '0x31eef89d5215c305304a2fa5376a1f1b6c5dc477', // USDC.e
 ]
 
 export const STABLE_COINS: string[] = [
-  '0x31EEf89D5215C305304a2fA5376a1f1b6C5dc477', // USDC.e
+  '0x31eef89d5215c305304a2fa5376a1f1b6c5dc477', // USDC.e
 ]
 
 export const SKIP_POOLS: string[] = []
