@@ -144,6 +144,12 @@ export function handlePoolCreated(event: PoolCreated): void {
   token0.save()
   token1.save()
   factory.save()
-  // create the tracked contract based on the template
-  PoolTemplate.create(event.params.pool)
+
+  if (
+    event.block.number > BigInt.fromString('13900000') ||
+    (WHITELIST_TOKENS.includes(token0.id.toHexString()) && WHITELIST_TOKENS.includes(token1.id.toHexString()))
+  ) {
+    // create the tracked contract based on the template
+    PoolTemplate.create(event.params.pool)
+  }
 }

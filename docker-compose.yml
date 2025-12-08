@@ -21,6 +21,7 @@ services:
       ipfs: 'ipfs:5001'
       ethereum: 'doma-testnet:https://rpc-testnet.doma.xyz'
       GRAPH_LOG: info
+      GRAPH_ALLOW_NON_DETERMINISTIC_FULLTEXT_SEARCH: true
   ipfs:
     image: ipfs/kubo:v0.17.0
     ports:
